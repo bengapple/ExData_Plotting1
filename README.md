@@ -100,15 +100,15 @@ The four plots that you will need to construct are shown below.
 
 ### Plot 2
 
-![plot-2](plot2.png) 
+![plot-2](https://github.com/bengapple/ExData_Plotting1/blob/master/figure/plot2.png) 
 
 
 ### Plot 3
 
-![plot-3](plot3.png) 
+![plot-3](https://github.com/bengapple/ExData_Plotting1/blob/master/figure/plot3.png) 
 
 
 ### Plot 4
 
-![plot-4](plot4.png) 
+![plot-4](https://github.com/bengapple/ExData_Plotting1/blob/master/figure/plot4.png) 
 
