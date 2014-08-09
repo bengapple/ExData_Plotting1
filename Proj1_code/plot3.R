@@ -11,7 +11,7 @@ hdat2 <- subset(hdat, hdat$Date == "2/2/2007")
 hdat_fin <- as.data.frame(rbind(hdat1, hdat2))
 hdat_fin$Date <- strptime(paste(hdat_fin$Date, hdat_fin$Time), "%d/%m/%Y %H:%M:%S")
 
-png(filename = 'plot4.png', width = 480, height = 480, units = 'px')
+png(filename = 'plot3.png', width = 480, height = 480, units = 'px')
 plot(hdat_fin$Date, hdat_fin$Sub_metering_3, pch = "", ylab = " ", xlab = " " )
 plot(hdat_fin$Date, hdat_fin$Sub_metering_2, pch = "", ylab = " ", xlab = " ")
 plot(hdat_fin$Date, hdat_fin$Sub_metering_1, pch = "", ylab = "Energy sub metering", xlab = " ")
