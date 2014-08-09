@@ -10,9 +10,11 @@ hdat1 <- subset(hdat, hdat$Date == "1/2/2007")
 hdat2 <- subset(hdat, hdat$Date == "2/2/2007")
 hdat_fin <- as.data.frame(rbind(hdat1, hdat2))
 hdat_fin$Date <- strptime(paste(hdat_fin$Date, hdat_fin$Time), "%d/%m/%Y %H:%M:%S")
-par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0, 0, 2, 0))
 
-        
+        png(filename = 'plot4.png', width = 480, height = 480, units = 'px')
+        par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0, 0, 2, 0))
+
+        dev.print(png, file = "plot4.png", width = 480, height = 480, units = "px")
         plot(hdat_fin$Date, hdat_fin[,3], pch = " ", ylab = "Global Active Power (kilowatts)", xlab = " ")
         lines(hdat_fin$Date, hdat_fin[,3], col = "black")
         
@@ -28,8 +30,8 @@ par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0, 0, 2, 0))
         plot(hdat_fin$Date, hdat_fin$Global_reactive_power, pch = " ", ylab = "Global_reactive_power", xlab = "datetime ")
         lines(hdat_fin$Date, hdat_fin$Global_reactive_power, col = "black")
 
-dev.copy(png, file = "plot4.png")
-dev.off()
+
+        dev.off()
         
       
         
